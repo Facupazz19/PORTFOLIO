@@ -76,17 +76,20 @@
           <div class="md:w-2/3 md:pl-6">
             <h2 class="text-3xl font-medium">Acerca de mí</h2>
             <p class="text-lg leading-relaxed">
-              Hola, mi nombre es (tu nombre) y soy un desarrollador web con
-              experiencia en (menciona tus habilidades o experiencia laboral).
-              Me apasiona (menciona tus intereses o pasiones) y siempre estoy
-              buscando nuevos desafíos y oportunidades para aprender y crecer en
-              mi carrera.
+              Desde muy pequeño me atrapó el mundo de la tecnología y me
+              encantó. Comencé jugando videojuegos hasta que decidí dar un
+              primer paso que fue aprender a programar donde descubrí una
+              fortaleza en mí, para trabajar en equipo y aprender de los demás.
+              El interés por un nuevo empleo en este espacio se debe a poder dar
+              un salto que me permita asumir nuevos desafíos logrando así un
+              desarrollo óptimo y generando una experiencia significativa en el
+              área de la programación
             </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- PROYECTOS -->
+    <!-- PROYECT -->
     <div class="bg-white py-12">
       <div class="container mx-auto">
         <h2 class="text-3xl font-medium text-center mb-6">Proyectos</h2>
@@ -136,15 +139,106 @@
         </div>
       </div>
     </div>
+    <!-- SKILLS -->
+    <section class="bg-white py-8">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-4 flex justify-center">Tecnologías</h2>
+        <p class="mb-4 flex justify-center">
+          Algunas de las tecnologías que utilizo para desarrollar mis proyectos:
+        </p>
+        <ul
+          class="flex flex-wrap justify-center border-2 border-gray-300 rounded-t-md overflow-hidden"
+        > {}
+          <li class="px-4 py-2 bg-white">
+            <a
+              href="#"
+              class="border-2 border-blue-500 text-black-500 px-2 py-1 mr-2 rounded-lg"
+              >HTML</a
+            >
+          </li>
+          <li class="px-4 py-2 bg-white">
+            <a
+              href="#"
+              class="border-2 border-blue-500 text-black-500 px-2 py-1 mr-2 rounded-lg"
+              >CSS</a
+            >
+          </li>
+          <li class="px-4 py-2 bg-white">
+            <a
+              href="#"
+              class="border-2 border-blue-500 text-black-500 px-2 py-1 mr-2 rounded-lg"
+              >Tailwind CSS</a
+            >
+          </li>
+          <li class="px-4 py-2 bg-white">
+            <a
+              href="#"
+              class="border-2 border-blue-500 text-black-500 px-2 py-1 mr-2 rounded-lg"
+              >JavaScript</a
+            >
+          </li>
+          <li class="px-4 py-2 bg-white">
+            <a
+              href="#"
+              class="border-2 border-blue-500 text-black-500 px-2 py-1 mr-2 rounded-lg "
+              >React</a
+            >
+          </li>
+          <li class="px-4 py-2 bg-white">
+            <a
+              href="#"
+              class="border-2 border-blue-500 text-black-500 px-2 py-1 mr-2 rounded-lg"
+              >NodeJS</a
+            >
+          </li>
+          <li class="px-4 py-2 bg-white">
+            <a
+              href="#"
+              class="border-2 border-blue-500 text-black-500 px-2 py-1 mr-2 rounded-lg"
+              >Sequelize</a
+            >
+          </li>
+          <li class="px-4 py-2 bg-white">
+            <a
+              href="#"
+              class="border-2 border-blue-500 text-black-500 px-2 py-1 mr-2 rounded-lg"
+              >Bootstrap</a
+            >
+          </li>
+          <li class="px-4 py-2 bg-white">
+            <a
+              href="#"
+              class="border-2 border-blue-500 text-black-500 px-2 py-1 mr-2 rounded-lg"
+              >Redux</a
+            >
+          </li>
+          <li class="px-4 py-2 bg-white">
+            <a
+              href="#"
+              class="border-2 border-blue-500 text-black-500 px-2 py-1 mr-2 rounded-lg"
+              >Express</a
+            >
+          </li>
+          <li class="px-4 py-2 bg-white">
+            <a
+              href="#"
+              class="border-2 border-blue-500 text-black-500 px-2 py-1 mr-2 rounded-lg"
+              >Postgresql</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <form class="bg-white p-6 rounded-lg">
-      <h2 class="text-lg mb-4">Contacto</h2>
+      <h2 class="text-4xl mb-4 flex justify-center">Contacto</h2>
       <div class="mb-4">
         <label class="block text-gray-700 font-medium mb-2" for="name">
           Nombre
         </label>
         <input
-          class="w-full border border-gray-400 p-2 rounded-lg"
+          class="w-full border border-gray-400 p-2 rounded-lg focus:outline-none focus:border-sky-900"
           type="text"
           id="name"
           name="name"
@@ -155,28 +249,38 @@
           Email
         </label>
         <input
-          class="w-full border border-gray-400 p-2 rounded-lg"
+          class="w-full border border-gray-400 p-2 rounded-lg focus:outline-none focus:border-sky-900"
           type="email"
           id="email"
           name="email"
         />
       </div>
       <div class="mb-4">
-        <label class="block text-gray-700 font-medium mb-2" for="message">
+        <label
+          class="block text-gray-700 font-medium mb-2 focus:outline-none focus:border-sky-900"
+          for="message"
+        >
           Mensaje
         </label>
         <textarea
-          class="w-full border border-gray-400 p-2 rounded-lg"
+          class="w-full border border-gray-400 p-2 rounded-lg focus:outline-none focus:border-sky-900"
           id="message"
           name="message"
         ></textarea>
       </div>
       <button
-        class="bg-indigo-500 text-white py-2 px-4 rounded-lg hover:bg-indigo-600"
+        class="bg-cyan-900 text-white py-2 px-4 rounded-lg hover:bg-cyan-900"
       >
         Enviar
       </button>
     </form>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto flex justify-center items-center">
+        <p>© 2023 Facundo Paz. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
     <script src="./index.js"></script>
   </body>
 </html>
