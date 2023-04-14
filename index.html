@@ -9,73 +9,87 @@
     <title>PORTFOLIO</title>
   </head>
   <body class="bg-gray-100">
-    <!-- NAVBAR -->
-    <nav class="bg-gray-900">
-      <div
-        class="container mx-auto px-6 py-4 flex items-center justify-between"
-      >
-        <div class="text-white">
-          <a href="#">Facundo Paz</a>
-        </div>
-        <div class="block lg:hidden">
-          <button
-            class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
-          >
-            <svg
-              class="fill-current h-3 w-3"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
+    <!-- Navbar -->
+    <nav class="bg-gray-800">
+      <div class="container mx-auto px-4">
         <div
-          class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block lg:bg-transparent lg:relative"
-          id="nav-content"
+          class="flex justify-between items-center py-4 md:justify-start md:space-x-10"
         >
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
-            <li class="mr-3">
-              <a
-                href="#about"
-                class="inline-block py-2 px-4 text-white font-medium hover:text-teal-200"
-                >Sobre Mi</a
+          <div class="flex justify-start lg:w-0 lg:flex-1">
+            <a href="#" class="text-white text-xl font-bold">Facundo Paz</a>
+          </div>
+
+          <!-- Botón de hamburguesa para dispositivos móviles -->
+          <div class="-mr-2 -my-2 md:hidden">
+            <button
+              id="mobile-menu-btn"
+              class="inline-flex items-center justify-center p-2 rounded-md text-white focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
               >
-            </li>
-            <li class="mr-3">
-              <a
-                href="#projects"
-                class="inline-block py-2 px-4 text-white font-medium hover:text-teal-200"
-                >Proyectos</a
-              >
-            </li>
-            <li class="mr-3">
-              <a
-                href="#contact"
-                class="inline-block py-2 px-4 text-white font-medium hover:text-teal-200"
-                >Contacto</a
-              >
-            </li>
-          </ul>
+                <path
+                  fill-rule="evenodd"
+                  d="M2 5h16a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Enlaces de navegación -->
+          <div class="hidden md:flex items-center space-x-4" id="nav-links">
+            <a href="#" class="text-white hover:text-gray-200">Acerca de</a>
+            <a href="#" class="text-white hover:text-gray-200">Servicios</a>
+            <a href="#" class="text-white hover:text-gray-200">Contacto</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menú desplegable para dispositivos móviles -->
+      <div class="md:hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#"
+            class="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-gray-200"
+            >Inicio</a
+          >
+          <a
+            href="#"
+            class="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-gray-200"
+            >Sobre mi</a
+          >
+          <a
+            href="#"
+            class="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-gray-200"
+            >Proyectos</a
+          >
+          <a
+            href="#"
+            class="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-gray-200"
+            >Contacto</a
+          >
         </div>
       </div>
     </nav>
-
-    <!-- MY PROFILE -->
-    <div class="bg-white py-12">
-      <div class="container mx-auto">
-        <div class="flex flex-col md:flex-row">
-          <div class="md:w-1/3">
+    <!-- MY PROFILE  -->
+    <section class="bg-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap items-center">
+          <div class="w-full md:w-1/3 lg:w-1/4 xl:w-1/5">
             <img
-              src="https://media.licdn.com/dms/image/D4D03AQEqIGOxR__5pg/profile-displayphoto-shrink_800_800/0/1670866355592?e=1679529600&v=beta&t=MFHxcrV83O3L0U4wAaZYmY32vdYa-xXxyxWdIj_Y2iA"
+              class="rounded-full w-42 h-42 mx-auto mb-4 md:mb-0"
+              src="https://lh3.googleusercontent.com/a/AGNmyxakf1_5n7qX0lmenRvJ78ZrYxKNspMkKYz-N1oNpQ=s288"
               alt="Foto de perfil"
-              class="rounded-full w-64 h-64 mx-auto md:mx-0 md:mr-6"
             />
           </div>
-          <div class="md:w-2/3 md:pl-6">
-            <h2 class="text-3xl font-medium">Acerca de mí</h2>
-            <p class="text-lg leading-relaxed">
+          <div class="w-full md:w-2/3 lg:w-3/4 xl:w-4/5 md:pl-8">
+            <h2 class="text-3xl font-bold text-black-500 mb-4 text-center">
+              Sobre mí
+            </h2>
+            <p class="text-gray-800 text-lg">
               Desde muy pequeño me atrapó el mundo de la tecnología y me
               encantó. Comencé jugando videojuegos hasta que decidí dar un
               primer paso que fue aprender a programar donde descubrí una
@@ -83,62 +97,55 @@
               El interés por un nuevo empleo en este espacio se debe a poder dar
               un salto que me permita asumir nuevos desafíos logrando así un
               desarrollo óptimo y generando una experiencia significativa en el
-              área de la programación
+              área de la programación.
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <!-- PROYECT -->
-    <div class="bg-white py-12">
+
+    <section class="bg-white py-10">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-medium text-center mb-6">Proyectos</h2>
-        <div class="flex flex-wrap -mx-2">
-          <div class="w-full md:w-1/3 px-2 mb-4">
-            <div class="bg-white rounded-lg shadow-md">
-              <img
-                src="proyecto1.jpg"
-                alt="Proyecto 1"
-                class="w-full rounded-t-lg"
-              />
-              <div class="p-4">
-                <h3 class="text-lg font-medium">Proyecto 1</h3>
-                <p class="text-gray-600">Breve descripción del proyecto 1.</p>
-                <a href="#" class="text-indigo-500 hover:underline">Ver más</a>
-              </div>
-            </div>
+        <h2 class="text-3xl font-bold text-center text-black-500 mb-4">
+          Mis Proyectos
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-black-500 mb-4">House Of Dev</h3>
+            <p class="text-gray-800">Descripción breve del proyecto 1.</p>
+            <a
+              href="https://github.com/tuusuario/proyecto1"
+              target="_blank"
+              class="block mt-4 text-blue-500 hover:text-blue-600"
+              >Ver Repositorio</a
+            >
           </div>
-          <div class="w-full md:w-1/3 px-2 mb-4">
-            <div class="bg-white rounded-lg shadow-md">
-              <img
-                src="proyecto2.jpg"
-                alt="Proyecto 2"
-                class="w-full rounded-t-lg"
-              />
-              <div class="p-4">
-                <h3 class="text-lg font-medium">Proyecto 2</h3>
-                <p class="text-gray-600">Breve descripción del proyecto 2.</p>
-                <a href="#" class="text-indigo-500 hover:underline">Ver más</a>
-              </div>
-            </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-black-500 mb-4">TMDB</h3>
+            <p class="text-gray-800">Descripción breve del proyecto 2.</p>
+            <a
+              href="https://github.com/tuusuario/proyecto2"
+              target="_blank"
+              class="block mt-4 text-blue-500 hover:text-blue-600"
+              >Ver Repositorio</a
+            >
           </div>
-          <div class="w-full md:w-1/3 px-2 mb-4">
-            <div class="bg-white rounded-lg shadow-md">
-              <img
-                src="proyecto3.jpg"
-                alt="Proyecto 3"
-                class="w-full rounded-t-lg"
-              />
-              <div class="p-4">
-                <h3 class="text-lg font-medium">Proyecto 3</h3>
-                <p class="text-gray-600">Breve descripción del proyecto 3.</p>
-                <a href="#" class="text-indigo-500 hover:underline">Ver más</a>
-              </div>
-            </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-black-500 mb-4">PROXIMAMENTE.</h3>
+            <p class="text-gray-800">Descripción breve del proyecto 3.</p>
+            <a
+              href="https://github.com/tuusuario/proyecto3"
+              target="_blank"
+              class="block mt-4 text-blue-500 hover:text-blue-600"
+              >Ver Repositorio</a
+            >
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <!-- SKILLS -->
     <section class="bg-white py-8">
       <div class="container mx-auto">
@@ -148,7 +155,7 @@
         </p>
         <ul
           class="flex flex-wrap justify-center border-2 border-gray-300 rounded-t-md overflow-hidden"
-        > {}
+        >
           <li class="px-4 py-2 bg-white">
             <a
               href="#"
@@ -180,7 +187,7 @@
           <li class="px-4 py-2 bg-white">
             <a
               href="#"
-              class="border-2 border-blue-500 text-black-500 px-2 py-1 mr-2 rounded-lg "
+              class="border-2 border-blue-500 text-black-500 px-2 py-1 mr-2 rounded-lg"
               >React</a
             >
           </li>
